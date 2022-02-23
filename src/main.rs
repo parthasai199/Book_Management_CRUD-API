@@ -30,7 +30,7 @@ fn rocket() -> Rocket<Build> {
             "/api/version-1",
             routes![index, new, show, update, delete, all_books_by_author],
         )
-        .mount("/", routes![static_files::index]) //static_files::all
+        .mount("/", routes![static_files::index]) 
 
 }
 

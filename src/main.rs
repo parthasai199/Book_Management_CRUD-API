@@ -1,5 +1,3 @@
-//#![feature(plugin, decl_macro)]
-
 #[macro_use]
 extern crate diesel;
 extern crate dotenv;
@@ -12,9 +10,7 @@ use dotenv::dotenv;
 use rocket_codegen::routes;
 use rocket::{Build, Rocket};
 use crate::routes::*;
-//use diesel::pg::PgConnection;
-//extern crate r2d2;
-//extern crate r2d2_diesel;
+
 
 mod schema;
 mod models;

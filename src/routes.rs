@@ -74,13 +74,6 @@ pub fn all_books_by_author(pool: &State<Pool>, new_author: String) -> Json<Value
     }))
 }
 
-/*#[catch(404)]
-pub fn not_found() -> Json<Value>{
-    Json(json!({
-        "status" : "error",
-        "reason" : "Resource was not found",
-    }))
-}*/
 
 
 

@@ -5,7 +5,7 @@ use diesel::pg::PgConnection;
 use crate::schema::book;
 use crate::schema::book::dsl::book as all_books;
 
-#[derive(Serialize, Queryable)] //Clone,Debug,Deserialize
+#[derive(Serialize, Queryable)] 
 pub struct Book
 {
     pub book_id:i32,
@@ -13,9 +13,8 @@ pub struct Book
     pub author: String,
 }
 
-#[derive( Deserialize, Insertable)] //Serialize
+#[derive( Deserialize, Insertable)] 
 #[table_name = "book"]
-//If we use Serial in schema, book_id is not needed
 pub struct NewBook
 {
     pub book_id:i32,
